@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Currículo de Ricardo Fahham — Analista de Qualidade de Software | QA | QA Automation"
+  />
+
+  <title>Ricardo Fahham | QA | QA Automation</title>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #06b6d4;
+      --dark: #172033;
+      --text: #334155;
+      --muted: #64748b;
+      --light: #f8fafc;
+      --border: #e2e8f0;
+      --white: #ffffff;
+      --success: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      background: #eef2f7;
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      background:
+        radial-gradient(circle at 85% 20%, rgba(6, 182, 212, 0.18), transparent 28%),
+        linear-gradient(135deg, #111827 0%, #172554 55%, #0f172a 100%);
+      color: white;
+      padding: 60px 0 52px;
+    }
+
+    .header-content {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #67e8f9;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 12px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4.3rem);
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: 14px;
+    }
+
+    .headline {
+      color: #cbd5e1;
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+
+    .contact a {
+      transition: color 0.2s ease;
+    }
+
+    .contact a:hover {
+      color: #67e8f9;
+    }
+
+    .profile-badge {
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(145deg, rgba(37, 99, 235, 0.9), rgba(6, 182, 212, 0.8));
+      border: 5px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -0.08em;
+    }
+
+    /* =========================
+       NAV
+    ========================= */
+
+    nav {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      overflow-x: auto;
+      padding: 8px 0;
+    }
+
+    .nav-inner a {
+      white-space: nowrap;
+      padding: 8px 12px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: 0.2s ease;
+    }
+
+    .nav-inner a:hover {
+      background: #eff6ff;
+      color: var(--primary);
+    }
+
+    /* =========================
+       MAIN
+    ========================= */
+
+    main {
+      padding: 34px 0 70px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 26px;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--dark);
+      font-size: 1.35rem;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title::before {
+      content: "";
+      width: 5px;
+      height: 25px;
+      border-radius: 5px;
+      background: linear-gradient(var(--primary), var(--accent));
+    }
+
+    .section-intro {
+      color: var(--text);
+      margin-bottom: 15px;
+    }
+
+    /* =========================
+       HIGHLIGHTS
+    ========================= */
+
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .highlight {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+    }
+
+    .highlight strong {
+      display: block;
+      color: var(--primary);
+      font-size: 1.1rem;
+      margin-bottom: 3px;
+    }
+
+    .highlight span {
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    /* =========================
+       EXPERIENCE
+    ========================= */
+
+    .job {
+      position: relative;
+      padding-left: 24px;
+      border-left: 2px solid #dbeafe;
+      margin-left: 5px;
+      padding-bottom: 34px;
+    }
+
+    .job:last-child {
+      padding-bottom: 0;
+    }
+
+    .job::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 3px solid white;
+      box-shadow: 0 0 0 2px #bfdbfe;
+    }
+
+    .job-header {
+      margin-bottom: 14px;
+    }
+
+    .job-title {
+      color: var(--dark);
+      font-size: 1.18rem;
+      font-weight: 750;
+    }
+
+    .job-company {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .job-meta {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 3px;
+    }
+
+    .job ul,
+    .project ul {
+      list-style: none;
+      margin-top: 12px;
+    }
+
+    .job li,
+    .project li {
+      position: relative;
+      padding-left: 19px;
+      margin-bottom: 7px;
+      font-size: 0.93rem;
+    }
+
+    .job li::before,
+    .project li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 1px;
+      color: var(--success);
+      font-weight: 800;
+      font-size: 0.8rem;
+    }
+
+    .subheading {
+      color: var(--dark);
+      font-size: 0.9rem;
+      font-weight: 750;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .skill-group {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      background: #fcfdff;
+    }
+
+    .skill-group h3 {
+      color: var(--dark);
+      font-size: 0.96rem;
+      margin-bottom: 12px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 9px;
+      border-radius: 7px;
+      background: #eff6ff;
+      border: 1px solid #dbeafe;
+      color: #1e40af;
+      font-size: 0.76rem;
+      font-weight: 600;
+    }
+
+    .tag.dark {
+      background: #f1f5f9;
+      border-color: #e2e8f0;
+      color: #475569;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .project {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      margin-bottom: 15px;
+      background: linear-gradient(135deg, #ffffff, #f8fbff);
+    }
+
+    .project:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+
+    .project h3 {
+      color: var(--dark);
+      font-size: 1.05rem;
+    }
+
+    .project-date {
+      white-space: nowrap;
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: #eff6ff;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    .project-link {
+      display: inline-flex;
+      margin-top: 14px;
+      color: var(--primary);
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    .project-link:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    /* =========================
+       SIDEBAR
+    ========================= */
+
+    .sidebar {
+      position: sticky;
+      top: 65px;
+    }
+
+    .side-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 23px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+    }
+
+    .side-card h2 {
+      color: var(--dark);
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .side-list li {
+      padding: 9px 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.86rem;
+    }
+
+    .side-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .side-list strong {
+      display: block;
+      color: var(--dark);
+      font-size: 0.82rem;
+    }
+
+    .side-list span {
+      color: var(--muted);
+    }
+
+    .profile-links {
+      display: grid;
+      gap: 9px;
+    }
+
+    .profile-link {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 12px;
+      border-radius: 9px;
+      background: #f8fafc;
+      color: #334155;
+      font-size: 0.82rem;
+      font-weight: 650;
+      border: 1px solid #e2e8f0;
+      transition: 0.2s ease;
+    }
+
+    .profile-link:hover {
+      color: var(--primary);
+      border-color: #bfdbfe;
+      background: #eff6ff;
+      transform: translateY(-1px);
+    }
+
+    .availability {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #047857;
+      font-size: 0.83rem;
+      font-weight: 700;
+    }
+
+    .availability::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px #d1fae5;
+    }
+
+    /* =========================
+       EDUCATION / CERTS
+    ========================= */
+
+    .simple-item {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .simple-item:last-child {
+      border-bottom: 0;
+    }
+
+    .simple-item strong {
+      display: block;
+      color: var(--dark);
+    }
+
+    .simple-item span {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    /* =========================
+       TECHNOLOGY CLOUD
+    ========================= */
+
+    .technology-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tech {
+      padding: 7px 11px;
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.77rem;
+      font-weight: 600;
+    }
+
+    .tech.highlight-tech {
+      background: linear-gradient(135deg, #2563eb, #0891b2);
+      color: white;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.8rem;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    /* =========================
+       PRINT
+    ========================= */
+
+    .print-button {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 20;
+      border: 0;
+      background: var(--primary);
+      color: white;
+      padding: 12px 17px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.35);
+      transition: 0.2s ease;
+    }
+
+    .print-button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      nav,
+      .print-button {
+        display: none;
+      }
+
+      header {
+        padding: 35px 0;
+      }
+
+      main {
+        padding: 20px 0;
+      }
+
+      .card,
+      .side-card,
+      .highlight {
+        box-shadow: none;
+      }
+
+      .card {
+        break-inside: avoid;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      a {
+        color: inherit !important;
+      }
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 950px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .highlights {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 42px 0;
+      }
+
+      .header-content {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-badge {
+        width: 100px;
+        height: 100px;
+        font-size: 1.8rem;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 21px;
+      }
+
+      .contact {
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .highlights {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .project-header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header id="top">
+    <div class="container header-content">
+
+      <div>
+        <div class="eyebrow">Quality Engineering</div>
+
+        <h1>Ricardo Fahham</h1>
+
+        <p class="headline">
+          Analista de Qualidade de Software | QA | QA Automation
+        </p>
+
+        <div class="contact">
+          <span>📍 Rio de Janeiro</span>
+          <a href="tel:+5521980025474">📱 21 98002-5474</a>
+          <a href="mailto:rfahham@gmail.com">✉️ rfahham@gmail.com</a>
+          <a
+            href="https://www.linkedin.com/in/ricardo-fahham/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/ricardo-fahham"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub / Portfólio
+          </a>
+        </div>
+      </div>
+
+      <div class="profile-badge" aria-label="Ricardo Fahham">
+        RF
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <nav>
+    <div class="container nav-inner">
+      <a href="#perfil">Perfil</a>
+      <a href="#competencias">Competências</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#formacao">Formação</a>
+      <a href="#tecnologias">Tecnologias</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- =========================
+           HIGHLIGHTS
+      ========================== -->
+
+      <div class="highlights">
+        <div class="highlight">
+          <strong>QA</strong>
+          <span>Qualidade de Software</span>
+        </div>
+
+        <div class="highlight">
+          <strong>Automation</strong>
+          <span>Playwright • Cypress</span>
+        </div>
+
+        <div class="highlight">
+          <strong>API</strong>
+          <span>REST • GraphQL • gRPC</span>
+        </div>
+
+        <div class="highlight">
+          <strong>Quality Engineering</strong>
+          <span>Shift-Left • CI/CD</span>
+        </div>
+      </div>
+
+      <div class="layout">
+
+        <!-- =========================
+             MAIN COLUMN
+        ========================== -->
+
+        <div>
+
+          <!-- PERFIL -->
+
+          <section class="card" id="perfil">
+            <h2 class="section-title">Resumo Profissional</h2>
+
+            <p class="section-intro">
+              Profissional orientado à qualidade de software, com foco em
+              análise, planejamento, execução e automação de testes.
+              Conhecimento em testes funcionais, regressivos, exploratórios,
+              integração, API e End-to-End.
+            </p>
+
+            <p class="section-intro">
+              Atuação com metodologias ágeis, identificação e investigação
+              de defeitos, documentação de cenários, validação de regras de
+              negócio e colaboração com equipes multidisciplinares.
+            </p>
+
+            <p>
+              Interesse e desenvolvimento contínuo em automação de testes,
+              Playwright, Cypress, testes de API, SQL, Git, CI/CD,
+              observabilidade e aplicação de Inteligência Artificial em
+              processos de QA.
+            </p>
+          </section>
+
+          <!-- OBJETIVO -->
+
+          <section class="card">
+            <h2 class="section-title">Objetivo Profissional</h2>
+
+            <p class="section-intro">
+              Atuar na área de Qualidade de Software (QA), contribuindo para
+              a entrega de aplicações confiáveis, seguras e de alta qualidade
+              por meio de testes manuais e automatizados, análise de
+              requisitos, validação de APIs, testes de integração e melhoria
+              contínua dos processos de qualidade.
+            </p>
+
+            <p>
+              Busco atuar em ambientes ágeis, colaborando com equipes de
+              Desenvolvimento, Produto e DevOps, aplicando práticas de
+              Quality Engineering, Shift-Left Testing, automação de testes
+              e CI/CD, com foco na prevenção de defeitos e na redução de
+              riscos para o negócio.
+            </p>
+          </section>
+
+          <!-- COMPETÊNCIAS -->
+
+          <section class="card" id="competencias">
+            <h2 class="section-title">Principais Competências</h2>
+
+            <div class="skills-grid">
+
+              <div class="skill-group">
+                <h3>Qualidade de Software e Estratégia</h3>
+                <div class="tags">
+                  <span class="tag">Quality Engineering</span>
+                  <span class="tag">Planejamento de testes</span>
+                  <span class="tag">Shift-Left Testing</span>
+                  <span class="tag">Análise de risco</span>
+                  <span class="tag">Causa raiz</span>
+                  <span class="tag">Critérios de aceite</span>
+                  <span class="tag">Gestão de defeitos</span>
+                  <span class="tag">Cenários de teste</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Tipos e Níveis de Testes</h3>
+                <div class="tags">
+                  <span class="tag">Funcionais</span>
+                  <span class="tag">Regressão</span>
+                  <span class="tag">Exploratórios</span>
+                  <span class="tag">Integração</span>
+                  <span class="tag">E2E</span>
+                  <span class="tag">Aceitação / UAT</span>
+                  <span class="tag">API</span>
+                  <span class="tag">Contrato</span>
+                  <span class="tag">Usabilidade</span>
+                  <span class="tag">Microsserviços</span>
+                  <span class="tag">Mensageria</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Automação de Testes</h3>
+                <div class="tags">
+                  <span class="tag">Playwright</span>
+                  <span class="tag">Cypress</span>
+                  <span class="tag">Selenium</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">POM</span>
+                  <span class="tag">Fixtures</span>
+                  <span class="tag">Assertions</span>
+                  <span class="tag">Test Data</span>
+                  <span class="tag">Paralelização</span>
+                  <span class="tag">Flaky Tests</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>APIs e Integrações</h3>
+                <div class="tags">
+                  <span class="tag">REST API</span>
+                  <span class="tag">GraphQL</span>
+                  <span class="tag">gRPC</span>
+                  <span class="tag">HTTP / HTTPS</span>
+                  <span class="tag">JSON / XML</span>
+                  <span class="tag">Postman</span>
+                  <span class="tag">Swagger / OpenAPI</span>
+                  <span class="tag">Insomnia</span>
+                  <span class="tag">OAuth</span>
+                  <span class="tag">Tokens</span>
+                  <span class="tag">Status Codes</span>
+                  <span class="tag">Payloads</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Banco de Dados</h3>
+                <div class="tags">
+                  <span class="tag">SQL</span>
+                  <span class="tag">SELECT</span>
+                  <span class="tag">INSERT</span>
+                  <span class="tag">UPDATE</span>
+                  <span class="tag">DELETE</span>
+                  <span class="tag">JOINs</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">MongoDB</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>DevOps, Git e CI/CD</h3>
+                <div class="tags">
+                  <span class="tag">Git</span>
+                  <span class="tag">GitHub</span>
+                  <span class="tag">GitLab</span>
+                  <span class="tag">Pull Requests</span>
+                  <span class="tag">Code Review</span>
+                  <span class="tag">Git Flow</span>
+                  <span class="tag">GitHub Actions</span>
+                  <span class="tag">Azure DevOps</span>
+                  <span class="tag">Jenkins</span>
+                  <span class="tag">GitLab CI</span>
+                  <span class="tag">GitHub Pages</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Agile e Processos</h3>
+                <div class="tags">
+                  <span class="tag">Scrum</span>
+                  <span class="tag">Kanban</span>
+                  <span class="tag">BDD</span>
+                  <span class="tag">Gherkin</span>
+                  <span class="tag">Definition of Done</span>
+                  <span class="tag">Refinamento</span>
+                  <span class="tag">Sprint Planning</span>
+                  <span class="tag">Retrospectivas</span>
+                  <span class="tag">Jira</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Performance</h3>
+                <div class="tags">
+                  <span class="tag">Carga</span>
+                  <span class="tag">Stress</span>
+                  <span class="tag">Resiliência</span>
+                  <span class="tag">Escalabilidade</span>
+                  <span class="tag">Grafana k6</span>
+                  <span class="tag">JMeter</span>
+                  <span class="tag">Locust</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Segurança e Acessibilidade</h3>
+                <div class="tags">
+                  <span class="tag">OWASP Top 10</span>
+                  <span class="tag">Testes de segurança</span>
+                  <span class="tag">Acessibilidade</span>
+                  <span class="tag">WCAG</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Observabilidade e Ambientes</h3>
+                <div class="tags">
+                  <span class="tag">Logs</span>
+                  <span class="tag">Traces</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">Prometheus</span>
+                  <span class="tag">Grafana</span>
+                  <span class="tag">Investigação de falhas</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Mensageria e Arquitetura</h3>
+                <div class="tags">
+                  <span class="tag">Microsserviços</span>
+                  <span class="tag">Kafka</span>
+                  <span class="tag">Mensageria</span>
+                  <span class="tag">Integração</span>
+                  <span class="tag">Contrato</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Linux e Shell</h3>
+                <div class="tags">
+                  <span class="tag">Linux</span>
+                  <span class="tag">Terminal</span>
+                  <span class="tag">Bash</span>
+                  <span class="tag">Shell Script</span>
+                  <span class="tag">SSH</span>
+                  <span class="tag">cURL</span>
+                  <span class="tag">Permissões</span>
+                  <span class="tag">Processos</span>
+                  <span class="tag">Logs</span>
+                  <span class="tag">Variáveis de ambiente</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Inteligência Artificial aplicada à QA</h3>
+                <div class="tags">
+                  <span class="tag">Geração de cenários</span>
+                  <span class="tag">Revisão de testes</span>
+                  <span class="tag">Scripts de automação</span>
+                  <span class="tag">Análise de falhas</span>
+                  <span class="tag">Dados de teste</span>
+                  <span class="tag">Cobertura</span>
+                  <span class="tag">Uso responsável de IA</span>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- EXPERIÊNCIA -->
+
+          <section class="card" id="experiencia">
+            <h2 class="section-title">Experiência Profissional</h2>
+
+            <article class="job">
+              <div class="job-header">
+                <div class="job-title">
+                  Analista de Teste Sênior —
+                  <span class="job-company">Banco BTG</span>
+                </div>
+
+                <div class="job-meta">
+                  08/2025 – 02/2026 | Rio de Janeiro / Remoto | Cloud: AWS
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  Planejamento, elaboração e execução de cenários e casos de
+                  teste.
+                </li>
+                <li>
+                  Realização de testes funcionais, regressivos, exploratórios
+                  e de integração.
+                </li>
+                <li>
+                  Identificação, documentação e acompanhamento de defeitos.
+                </li>
+                <li>Execução de testes UAT.</li>
+                <li>
+                  Validação de regras de negócio e critérios de aceite.
+                </li>
+                <li>
+                  Execução e manutenção de testes automatizados utilizando
+                  Cypress.
+                </li>
+                <li>
+                  Desenvolvimento de testes de API utilizando Postman.
+                </li>
+                <li>
+                  Validação de dados utilizando SQL e DBeaver.
+                </li>
+                <li>
+                  Investigação de falhas por meio de logs, evidências e
+                  análise de causa raiz.
+                </li>
+                <li>
+                  Participação em cerimônias Scrum e colaboração com
+                  Desenvolvimento e Produto.
+                </li>
+                <li>
+                  Contribuição para melhoria contínua dos processos de
+                  qualidade.
+                </li>
+              </ul>
+
+              <div class="subheading">Principais resultados</div>
+
+              <ul>
+                <li>Validação do processo de Onboarding de Conta Individual e Conjunta.</li>
+                <li>Inclusão de motivos de rejeição de documentação — Carteira Administrada.</li>
+                <li>Revisão Cadastral de Clientes.</li>
+                <li>Adieu — Sistema de Encerramento de Conta.</li>
+                <li>Abertura de Conta Kids com representantes legais.</li>
+                <li>BCB 475/2025 — Segurança do usuário.</li>
+              </ul>
+
+              <div class="subheading">Ferramentas utilizadas</div>
+
+              <div class="tags">
+                <span class="tag">Postman</span>
+                <span class="tag">SQL</span>
+                <span class="tag">DBeaver</span>
+                <span class="tag">Helm</span>
+                <span class="tag">AWS</span>
+                <span class="tag">Painel de Administração</span>
+              </div>
+            </article>
+
+            <article class="job">
+              <div class="job-header">
+                <div class="job-title">
+                  Analista de Teste Sênior —
+                  <span class="job-company">
+                    Globo Comunicação e Participações
+                  </span>
+                </div>
+
+                <div class="job-meta">
+                  10/2014 – 02/2024 | Rio de Janeiro / Remoto | Cloud: GCP
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  Planejamento, elaboração e execução de cenários e casos de
+                  teste.
+                </li>
+                <li>
+                  Realização de testes funcionais, regressivos, exploratórios
+                  e de integração.
+                </li>
+                <li>
+                  Identificação, documentação e acompanhamento de defeitos.
+                </li>
+                <li>
+                  Validação das regras de negócio e critérios de aceite.
+                </li>
+                <li>
+                  Desenvolvimento de testes de API utilizando cURL, Postman e
+                  k6.
+                </li>
+                <li>Validação de dados utilizando SQL.</li>
+                <li>
+                  Investigação de falhas por meio de logs, evidências e
+                  análise de causa raiz.
+                </li>
+                <li>Integração dos testes ao processo de CI/CD.</li>
+                <li>
+                  Participação em cerimônias Scrum e colaboração com
+                  Desenvolvimento e Produto.
+                </li>
+                <li>
+                  Contribuição para melhoria contínua dos processos de
+                  qualidade.
+                </li>
+              </ul>
+
+              <div class="subheading">Principais resultados e projetos</div>
+
+              <ul>
+                <li><strong>Globoplay:</strong> aplicações com 42 milhões de acessos.</li>
+                <li>
+                  <strong>Cartola:</strong> testes periódicos para prevenção
+                  de erros em produção.
+                </li>
+                <li>
+                  <strong>GLive:</strong> autenticação e autorização de
+                  assinantes.
+                </li>
+                <li><strong>The Voice Brasil.</strong></li>
+                <li><strong>ENEM.</strong></li>
+                <li><strong>G1:</strong> eleições e grandes eventos.</li>
+              </ul>
+            </article>
+          </section>
+
+          <!-- PROJETOS -->
+
+          <section class="card" id="projetos">
+            <h2 class="section-title">
+              Projetos, Portfólio e Conteúdo Técnico
+            </h2>
+
+            <article class="project">
+              <div class="project-header">
+                <div>
+                  <h3>Hora do QA — Criador de Conteúdo Técnico e Educador</h3>
+                </div>
+
+                <span class="project-date">2024 – Atual</span>
+              </div>
+
+              <ul>
+                <li>
+                  Criação e apresentação de conteúdos técnicos sobre Quality
+                  Assurance, testes de software e automação.
+                </li>
+                <li>
+                  Desenvolvimento de tutoriais práticos sobre Playwright,
+                  Cypress, Robot Framework, Postman, JMeter e Grafana k6.
+                </li>
+                <li>
+                  Produção de conteúdos sobre testes manuais, testes
+                  automatizados, APIs e testes de performance.
+                </li>
+                <li>
+                  Demonstração prática de ferramentas, técnicas e boas
+                  práticas aplicadas ao ciclo de qualidade.
+                </li>
+                <li>
+                  Criação de exemplos e cenários práticos para desenvolvimento
+                  de habilidades em QA.
+                </li>
+                <li>
+                  Compartilhamento contínuo de conhecimento com a comunidade
+                  de profissionais de qualidade e tecnologia.
+                </li>
+                <li>
+                  Produção de conteúdo técnico por mais de 2 anos.
+                </li>
+              </ul>
+
+              <a
+                class="project-link"
+                href="https://www.youtube.com/@horadoqa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ▶ Visitar o canal Hora do QA
+              </a>
+            </article>
+
+            <article class="project">
+              <div class="project-header">
+                <div>
+                  <h3>Suíte de Automação Web</h3>
+                </div>
+
+                <span class="project-date">Playwright</span>
+              </div>
+
+              <div class="tags">
+                <span class="tag">Playwright</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Git</span>
+                <span class="tag">CI/CD</span>
+              </div>
+
+              <ul>
+                <li>
+                  Desenvolvimento de suíte de testes automatizados para
+                  aplicação web.
+                </li>
+                <li>
+                  Implementação de Page Object Model.
+                </li>
+                <li>
+                  Criação de cenários positivos, negativos e de exceção.
+                </li>
+                <li>
+                  Execução dos testes em diferentes navegadores.
+                </li>
+                <li>
+                  Geração de evidências e relatórios.
+                </li>
+                <li>
+                  Integração da suíte com pipeline CI/CD.
+                </li>
+              </ul>
+
+              <a
+                class="project-link"
+                href="https://github.com/ricardo-fahham"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub / Portfólio
+              </a>
+            </article>
+
+            <article class="project">
+              <div class="project-header">
+                <div>
+                  <h3>Projeto de Testes de API</h3>
+                </div>
+
+                <span class="project-date">REST • SQL</span>
+              </div>
+
+              <div class="tags">
+                <span class="tag">Postman</span>
+                <span class="tag">REST</span>
+                <span class="tag">JSON</span>
+                <span class="tag">SQL</span>
+              </div>
+
+              <ul>
+                <li>
+                  Criação de coleção de testes para APIs REST.
+                </li>
+                <li>
+                  Validação de status codes, headers, payloads e regras de
+                  negócio.
+                </li>
+                <li>
+                  Testes de cenários positivos e negativos.
+                </li>
+                <li>
+                  Validação dos dados persistidos no banco.
+                </li>
+                <li>
+                  Automação da execução dos testes.
+                </li>
+              </ul>
+            </article>
+
+            <div class="skill-group" style="margin-top: 18px;">
+              <h3>Comunicação e Conhecimento Técnico</h3>
+
+              <div class="tags">
+                <span class="tag">Comunicação técnica</span>
+                <span class="tag">Disseminação de conhecimento</span>
+                <span class="tag">Criação de conteúdo técnico</span>
+                <span class="tag">Mentoria</span>
+                <span class="tag">Ensino de QA</span>
+                <span class="tag">Documentação técnica</span>
+                <span class="tag">Apresentação técnica</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- FORMAÇÃO -->
+
+          <section class="card" id="formacao">
+            <h2 class="section-title">Formação e Certificações</h2>
+
+            <div class="simple-item">
+              <strong>Análise e Desenvolvimento de Sistemas</strong>
+              <span>PUC-RJ — Concluído em 1994</span>
+            </div>
+
+            <div class="simple-item">
+              <strong>Formação DevOps</strong>
+              <span>Alura</span>
+            </div>
+
+            <div class="simple-item">
+              <strong>PO & SM</strong>
+              <span>Serratech</span>
+            </div>
+
+            <div class="simple-item">
+              <strong>QA</strong>
+              <span>FAST</span>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+          <div class="side-card">
+            <h2>Links profissionais</h2>
+
+            <div class="profile-links">
+
+              <a
+                class="profile-link"
+                href="https://www.linkedin.com/in/ricardo-fahham/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                🔗 LinkedIn
+              </a>
+
+              <a
+                class="profile-link"
+                href="https://github.com/ricardo-fahham"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                💻 GitHub / Portfólio
+              </a>
+
+              <a
+                class="profile-link"
+                href="https://github.com/horadoqa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                🧪 GitHub Hora do QA
+              </a>
+
+              <a
+                class="profile-link"
+                href="https://www.youtube.com/@horadoqa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ▶️ Canal Hora do QA
+              </a>
+
+              <a
+                class="profile-link"
+                href="mailto:rfahham@gmail.com"
+              >
+                ✉️ Enviar e-mail
+              </a>
+
+            </div>
+          </div>
+
+          <div class="side-card">
+            <h2>Especialidades</h2>
+
+            <ul class="side-list">
+              <li>
+                <strong>QA Automation</strong>
+                <span>Playwright • Cypress • Selenium</span>
+              </li>
+
+              <li>
+                <strong>API Testing</strong>
+                <span>REST • GraphQL • gRPC</span>
+              </li>
+
+              <li>
+                <strong>Performance</strong>
+                <span>k6 • JMeter • Locust</span>
+              </li>
+
+              <li>
+                <strong>Quality Engineering</strong>
+                <span>Shift-Left • Estratégia • Risco</span>
+              </li>
+
+              <li>
+                <strong>DevOps</strong>
+                <span>Git • CI/CD • Docker</span>
+              </li>
+
+              <li>
+                <strong>Observabilidade</strong>
+                <span>Logs • Traces • Grafana • Prometheus</span>
+              </li>
+
+              <li>
+                <strong>IA para QA</strong>
+                <span>Automação • Análise • Cobertura</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="side-card">
+            <h2>Cloud</h2>
+
+            <div class="tags">
+              <span class="tag">AWS</span>
+              <span class="tag">GCP</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Helm</span>
+            </div>
+          </div>
+
+          <div class="side-card">
+            <h2>Idiomas</h2>
+
+            <ul class="side-list">
+              <li>
+                <strong>Português</strong>
+                <span>Nativo</span>
+              </li>
+
+              <li>
+                <strong>Inglês</strong>
+                <span>Intermediário</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="side-card">
+            <h2>Perfil</h2>
+
+            <div class="availability">
+              Qualidade em primeiro lugar
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+
+      <!-- =========================
+           TECHNOLOGIES
+      ========================== -->
+
+      <section class="card" id="tecnologias">
+        <h2 class="section-title">Tecnologias</h2>
+
+        <div class="technology-cloud">
+
+          <span class="tech highlight-tech">Playwright</span>
+          <span class="tech highlight-tech">Cypress</span>
+          <span class="tech">Selenium</span>
+          <span class="tech">Robot Framework</span>
+
+          <span class="tech highlight-tech">JavaScript</span>
+          <span class="tech highlight-tech">TypeScript</span>
+          <span class="tech">Python</span>
+          <span class="tech">Go</span>
+
+          <span class="tech highlight-tech">Postman</span>
+          <span class="tech">REST</span>
+          <span class="tech">GraphQL</span>
+          <span class="tech">gRPC</span>
+          <span class="tech">Swagger / OpenAPI</span>
+
+          <span class="tech highlight-tech">SQL</span>
+          <span class="tech">PostgreSQL</span>
+          <span class="tech">MySQL</span>
+          <span class="tech">MongoDB</span>
+
+          <span class="tech highlight-tech">Git</span>
+          <span class="tech">GitHub Actions</span>
+          <span class="tech">Azure DevOps</span>
+          <span class="tech">Jenkins</span>
+          <span class="tech">GitLab CI</span>
+
+          <span class="tech highlight-tech">k6</span>
+          <span class="tech">JMeter</span>
+          <span class="tech">Locust</span>
+
+          <span class="tech">Docker</span>
+          <span class="tech">Kubernetes</span>
+          <span class="tech">Helm</span>
+
+          <span class="tech">Prometheus</span>
+          <span class="tech">Grafana</span>
+          <span class="tech">Logs</span>
+          <span class="tech">Traces</span>
+
+          <span class="tech">Linux</span>
+          <span class="tech">Bash</span>
+          <span class="tech">SSH</span>
+          <span class="tech">cURL</span>
+
+          <span class="tech">Scrum</span>
+          <span class="tech">Kanban</span>
+          <span class="tech">BDD</span>
+          <span class="tech">Gherkin</span>
+
+          <span class="tech">OWASP</span>
+          <span class="tech">WCAG</span>
+
+          <span class="tech highlight-tech">OpenAI</span>
+          <span class="tech highlight-tech">Claude</span>
+          <span class="tech highlight-tech">Copilot</span>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <strong>Ricardo Fahham</strong> · QA · QA Automation · Quality Engineering
+  </footer>
+
+  <button
+    class="print-button"
+    onclick="window.print()"
+    aria-label="Imprimir ou salvar currículo em PDF"
+  >
+    🖨️ PDF / Imprimir
+  </button>
+
+</body>
+</html>
